@@ -36,3 +36,10 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+.idea/
+screenshots/
+drivers/chromedriver
+*.log
+*.class
+*.png

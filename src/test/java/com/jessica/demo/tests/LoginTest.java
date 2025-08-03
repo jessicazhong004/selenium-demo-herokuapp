@@ -26,15 +26,15 @@ public class LoginTest {
             WebElement flash = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("flash")));
 
             if (flash.getText().contains("You logged into a secure area!")) {
-                System.out.println("✅ Login successful!");
+                System.out.println("Login successful!");
                 ScreenshotUtil.takeScreenshot(driver, "login_success");
             } else {
-                System.out.println("❌ Login failed!");
+                System.out.println("Login failed!");
                 ScreenshotUtil.takeScreenshot(driver, "login_failed");
             }
 
         } catch (Exception e) {
-            System.out.println("❗ Test error: " + e.getMessage());
+            System.out.println("Test error: " + e.getMessage());
             ScreenshotUtil.takeScreenshot(driver, "login_exception");
         } finally {
             try {
