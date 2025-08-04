@@ -43,3 +43,5 @@ drivers/chromedriver
 *.log
 *.class
 *.png
+
+.env
